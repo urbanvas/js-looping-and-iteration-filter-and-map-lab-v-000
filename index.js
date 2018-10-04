@@ -2,7 +2,7 @@
 
 function driversWithRevenueOver(dri, rev) {
   const arr = []
-  return dri.map(el => {
+  return dri.filter(el => {
     el.revenue > rev
   })
 }
