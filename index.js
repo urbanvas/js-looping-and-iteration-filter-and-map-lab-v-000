@@ -11,7 +11,7 @@ function driverNamesWithRevenueOver(dri, rev) {
 function exactMatch(dri, revObj) {
   return dri.filter(el => {
     el[Object.keys(revObj)] === revObj[Object.keys(revObj)]
-  }
+  })
 }
 
 
