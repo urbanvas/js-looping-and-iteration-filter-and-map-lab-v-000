@@ -9,7 +9,7 @@ function driverNamesWithRevenueOver(dri, rev) {
 }
 
 function exactMatch(dri, revObj) {
-  return dri.filter(el => {return el > revObj})
+  return dri.filter(el => {return el === revObj})
 }
 
 //
