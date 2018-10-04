@@ -15,7 +15,9 @@ function exactMatch(dri, obj) {
 }
 
 function exactMatchToList(dri, obj) {
-  debugger
+  return dri.filter(el => {
+    return el[Object.keys(obj)] === obj[Object.keys(obj)]
+  }).map(el => el.name)
 }
 
 
