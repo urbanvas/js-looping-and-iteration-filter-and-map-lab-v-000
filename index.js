@@ -1,12 +1,12 @@
 // Code your solution here:
 
-function driversWithRevenueOver(dri, rev) {
-  return dri.filter(el => {return el.revenue > rev})
-}
-
 // function driversWithRevenueOver(dri, rev) {
-//   return dri.filter(el => {return el.revenue > rev}).map(el => el.name)
+//   return dri.filter(el => {return el.revenue > rev})
 // }
+
+function driversWithRevenueOver(dri, rev) {
+  return dri.filter(el => {return el.revenue > rev}).map(el => el.name)
+}
 
 //
 // const drivers = [];
