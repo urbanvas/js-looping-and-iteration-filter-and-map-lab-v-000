@@ -8,14 +8,14 @@ function driverNamesWithRevenueOver(dri, rev) {
   return dri.filter(el => {return el.revenue > rev}).map(el => el.name)
 }
 
-function exactMatch(dri, revObj) {
+function exactMatch(dri, obj) {
   return dri.filter(el => {
-    return el[Object.keys(revObj)] === revObj[Object.keys(revObj)]
+    return el[Object.keys(obj)] === obj[Object.keys(obj)]
   })
 }
 
-function exactMatchToList(dri, Obj) {
-
+function exactMatchToList(dri, obj) {
+  debugger
 }
 
 
