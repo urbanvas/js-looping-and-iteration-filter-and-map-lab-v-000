@@ -16,6 +16,5 @@ function exactMatch(dri, obj) {
 
 function exactMatchToList(dri, obj) {
   return dri.filter(el => {
-    return el[Object.keys(obj)] === obj[Object.keys(obj)]
-  }).map(el => el.name)
+    return el[Object.keys(obj)] === obj[Object.keys(obj)]}).map(el => el.name)
 }
