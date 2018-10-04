@@ -9,13 +9,16 @@ function driverNamesWithRevenueOver(dri, rev) {
 }
 
 function exactMatch(dri, revObj) {
-  return dri.filter(el => {return el == revObj})
+  return dri.filter(el => {
+    return el[Object.keys(revObj)]})
 }
 
-//
-// const drivers = [];
-// drivers.push(
-//   { name: 'Sally',   revenue: 400 },
-//   { name: 'Annette', revenue: 200 },
-//   { name: 'Jim',     revenue: 150 }
-// );
+
+
+const extendedDrivers = [];
+extendedDrivers.push(
+  { name: 'Sally',   revenue: 400 },
+  { name: 'Annette', revenue: 200 },
+  { name: 'Jim',     revenue: 150 },
+  { name: 'Sally',   revenue: 200 }
+);
