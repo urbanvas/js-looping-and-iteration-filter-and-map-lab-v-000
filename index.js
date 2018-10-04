@@ -1,11 +1,9 @@
 // Code your solution here:
 
 function driversWithRevenueOver(dri, rev) {
-  const arr = []
-  arr.push(dri.filter(el => {
+  return dri.filter(el => {
     return el.revenue > rev
-  }))
-  return arr
+  })
 }
 
 const drivers = [];
