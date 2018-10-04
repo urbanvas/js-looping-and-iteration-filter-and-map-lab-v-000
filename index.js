@@ -14,6 +14,9 @@ function exactMatch(dri, revObj) {
   })
 }
 
+function exactMatchToList(dri, Obj) {
+
+}
 
 
 const extendedDrivers = [];
