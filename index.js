@@ -2,12 +2,13 @@
 
 function driversWithRevenueOver(dri, rev) {
   const arr = []
-  return dri.filter(el => {
-    el.revenue > rev
-  })
+   arr.push(dri.filter(el => {
+    return el.revenue > rev
+  }))
+  return arr
 }
-
-let drivers = (
+const drivers = [];
+drivers.push(
   { name: 'Sally',   revenue: 400 },
   { name: 'Annette', revenue: 200 },
   { name: 'Jim',     revenue: 150 }
