@@ -19,12 +19,3 @@ function exactMatchToList(dri, obj) {
     return el[Object.keys(obj)] === obj[Object.keys(obj)]
   }).map(el => el.name)
 }
-
-
-const extendedDrivers = [];
-extendedDrivers.push(
-  { name: 'Sally',   revenue: 400 },
-  { name: 'Annette', revenue: 200 },
-  { name: 'Jim',     revenue: 150 },
-  { name: 'Sally',   revenue: 200 }
-);
